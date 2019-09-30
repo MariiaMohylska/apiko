@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href='style.css'>
+    <meta charset="utf-8">
+    <title>
+        TASK 1
+    </title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td id="menu">
+                <div>
+                    <input class="butn" type="button" value="By Surname" onclick='SortAndShowSurname()'>
+                    <input class="butn" type="button" value="By Rating" onclick="SortAndShowRatting()">
+                    <input class="butn" type="button" value="Worst student" onclick="worstStudent()">                    
+                    <input class="butn" type="button" value="Average student" onclick="avrgStudent()">
+                    <input class="butn" type="button" value="Best student" onclick="bestStudent()">
+                    <input class="butn" type="button" value="Rate" onclick="Rate()">
+                    <br>
+                    <hr>
+                    <label for="password">Enter number of characters in password:</label>
+                    <br>
+                    <input class="txt"  type="number" id="passwordCharNum">                   
+                    <br>
+                    <label for="password">Select type of password: </label>
+                    <br>
+                    <input  type="checkbox" id="CharsNumbers" name="password" value="CharsNumbers">
+                    <label for="CharsNumbers">Numbers</label>
+                    <br>
+                    <input type="checkbox" id="CharsSymbols" name="password" value="CharsSymbols">
+                    <label for="CharsNumbers">Symbols</label>
+                    <br>
+                    <input class="butn" type="button" value="Generate password" onclick="Password()">
+                </div>
+            </td>
+            <td></td>
+            <td id="solution">
+                <div id="result">
+
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <script src="task1.js"></script>
+
+</body>
+
+</html>
